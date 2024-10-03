@@ -19,6 +19,9 @@ monthly_challenges = {
     "december": "Dicembre",
 }
 
+def monthly_list(request):
+    return monthly_challenges
+
 
 def monthly_challenge_by_number(request, month):
     months = list(monthly_challenges.keys())
